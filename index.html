@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/src/img/blu.webp">
+    <title>بلو، بانک ولی دوست داشتنی</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="font-yekan">
+    <!-- header -->
+    <section class="w-full shadow-headSh fixed bg-white z-[49]">
+        <header class="w-full 2xl:container mx-auto">
+            <div class="w-full xl:w-[85%] mx-auto p-5 flex justify-center items-center">
+                <div class="hidden lg:flex lg:w-[25%]">
+                    <a href="" class="bg-[#3094ea] text-[#fff] text-[16px] px-[15px] py-[13px] rounded-[25px]">بازکردن
+                        حساب بلو</a>
+                </div>
+                <nav class="md:w-[90%] w-[70%] flex justify-start items-center">
+                    <ul class="hidden md:flex md:px-4 *:px-7 justify-center items-center text-[#737789]">
+                        <li><a href="">درباره ما</a></li>
+                        <li><a href="">بلاگ</a></li>
+                        <li><a href="#FAQ">سوالات متداول</a></li>
+                        <li><a href="">موقعیت شغلی</a></li>
+                        <li><a href="">بلوجونیور</a></li>
+                    </ul>
+                    <div class="md:hidden">
+                        <span id="open_menu" onclick="openMenu()"
+                            class="!text-[40px] material-symbols-outlined cursor-pointer">
+                            menu
+                        </span>
+                    </div>
+                </nav>
+                <figure class="w-[15%] md:w-[10%] lg:w-[5%]">
+                    <img src="img/logo.png" class="w-full" alt="">
+                </figure>
+            </div>
+        </header>
+        <section id="menu_acc" class="w-0 h-screen absolute top-0 overflow-hidden z-50 bg-[#e5e4e4] duration-500">
+            <div class="w-full flex justify-end items-center">
+                <span id="close_menu" onclick="closeMenu()"
+                    class="material-symbols-outlined !text-[35px] m-4 cursor-pointer">
+                    close
+                </span>
+            </div>
+            <div class="w-[500px] h-full">
+                <ul class="z-50 w-full h-full *:p-7 *: *:w-full text-[#353636] text-[22px]">
+                    <li><a href="">درباره ما</a></li>
+                    <li><a href="">بلاگ</a></li>
+                    <li><a href="">سوالات متداول</a></li>
+                    <li><a href="">موقعیت شغلی</a></li>
+                    <li><a href="">بلوجونیور</a></li>
+                </ul>
+            </div>
+        </section>
+    </section>
+    <!-- header -->
+    <!-- empty section -->
+    <section class="w-full">
+        <div class="w-full h-[200px]"></div>
+    </section>
+    <!-- empty section -->
+    <!-- start banner section -->
+    <section class="w-full">
+        <div class="w-full 2xl:container mx-auto">
+            <figure class="w-full xl:w-[85%] mx-auto p-5 flex justify-center items-center">
+                <a href="">
+                    <img src="img/banner.jpg" class="hidden md:flex rounded-2xl" alt="">
+                    <img src="img/banner2.jpg" class="md:hidden rounded-2xl" alt="">
+                </a>
+            </figure>
+        </div>
+    </section>
+    <!-- end banner section -->
+    <!-- empty section -->
+    <section class="w-full">
+        <div class="w-full h-[100px]"></div>
+    </section>
+    <!-- empty section -->
+    <!-- start slider section -->
+    <section class="w-full">
+        <div class="w-full 2xl:container mx-auto">
+            <div class="w-full xl:w-[85%] mx-auto p-5 flex justify-center">
+                <div class="hidden lg:flex lg:w-[30%]">
+                    <video src="https://blubank.sb24.ir/static/Segmnt_01-5b902acc556a26054e1f29c0a8b4e4f3.mp4" loop autoplay class=""></video>
+                </div>
+                <div class="w-full lg:w-[70%] flex justify-center items">
+                    <div class="w-full lg:w-[80%] mx-auto">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <article class="swiper-slide">
+                                    <h2 class="text-[35px] text-[#4b94ea] mt-10 text-right">حفاظت از سرمایه مشتریان</h2>
+                                    <ul class="my-10 *:py-4 w-[85%] mx-auto lg:mx-0">
+                                        <li class="text-[#737789] pr-[35px] relative text-justify">
+                                            <span
+                                                class="material-symbols-outlined text-[#4b94ea] !text-[25px] font-bold absolute right-0 ">
+                                                remove
+                                            </span>
+                                            مبالغ سپرده‌های مشتریان در چارچوب ضوابط قانونی و تا سقف قانونی تعیین شده،
+                                            مورد
+                                            تضمین صندوق ضمانت سپرده‌های بانک مرکزی است.
+                                        </li>
+                                        <li class="text-[#737789] pr-[35px] relative text-justify">
+                                            <span
+                                                class="material-symbols-outlined text-[#4b94ea] !text-[25px] font-bold absolute right-0 ">
+                                                remove
+                                            </span>
+                                            ما همه‌ی اطلاعات حساب‌ها و مدارک هویتی مشتریان خود را محرمانه تلقی کرده و
+                                            متعهد می‌شویم تحت هر شرایطی جز در موارد قانونی از انتشار آن جلوگیری کرده و
+                                            مسئولیت این موضوع را به طور کامل می‌پذیریم.
+                                        </li>
+                                    </ul>
+                                </article>
+                                <article class="swiper-slide ">
+                                    <div
+                                        class="w-full flex lg:flex-nowrap justify-evenly items-center *:m-1 lg:px-2 mt-10">
+                                        <section class="w-[200px]">
+                                            <span class="material-symbols-outlined text-[#4b94ea] !text-[40px]">
+                                                percent
+                                            </span>
+                                            <div class="w-full min-h-[200px] bg-[#ebf4fc] rounded-[25px]">
+                                                <h3 class="font-bold my-5 py-2 text-[14px] lg:text-[16px]">۵ درصد سود
+                                                    سپرده</h3>
+                                                <p class="text-[12px] lg:text-[14px] text-[#4b94ea]">در بلو برای حداقل
+                                                    مانده موجودی در
+                                                    ماه، سود سالیانه ۵ درصد به صورت
+                                                    ماه‌شمار پرداخت می‌شود.</p>
+                                            </div>
+                                        </section>
+                                        <section class="w-[200px]">
+                                            <span class="material-symbols-outlined text-[#4b94ea] !text-[40px]">
+                                                credit_card
+                                            </span>
+                                            <div class="w-full min-h-[200px] bg-[#ebf4fc] rounded-[25px] px-1">
+                                                <h3 class="font-bold my-5 py-2 text-[14px] lg:text-[16px]">بدون کارمزد
+                                                    بازکردن حساب</h3>
+                                                <p class="text-[12px] lg:text-[14px] text-[#4b94ea]">در بلو بازکردن حساب
+                                                    کاملا رایگان
+                                                    است و نیاز به پرداخت هیچ کارمزدی ندارد.</p>
+                                            </div>
+                                        </section>
+                                        <section class="w-[200px]">
+                                            <span class="material-symbols-outlined text-[#4b94ea] !text-[40px]">
+                                                credit_card_off
+                                            </span>
+                                            <div class="w-full min-h-[200px] bg-[#ebf4fc] rounded-[25px] px-1">
+                                                <h3 class="font-bold my-5 py-2 text-[14px] lg:text-[16px]">بدون حداقل
+                                                    موجودی حساب</h3>
+                                                <p class="text-[12px] lg:text-[14px] text-[#4b94ea]">در بلو برای بازکردن
+                                                    حساب، نیاز به
+                                                    حتی یک ریال موجودی نیست.</p>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </article>
+                                <article class="swiper-slide">
+                                    <h2 class="text-[35px] text-[#4b94ea] mt-10 text-right">بلو؛ بانک ولی دوست‌داشتنی
+                                    </h2>
+                                    <p class="w-[85%] mx-auto lg:mx-0 lg:w-[75%] text-[#737789] my-10 text-justify">بلو،
+                                        پلتفرمی
+                                        تمام دیجیتال است
+                                        که همه‌ی عملیات بانکداری روی اپلیکیشن موبایل و
+                                        کاملا آنلاین انجام می‌شود. به زبان ساده، بانکی است که همیشه همراه شما خواهد بود.
+                                    </p>
+                                    <div class="text-right bg-[#4b94ea] w-[200px] py-3 text-white rounded-2xl">
+                                        <a href="" class="flex justify-center items-center">
+                                            <span class="material-symbols-outlined">
+                                                download
+                                            </span>
+                                            دانلود اپلیکیشن
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end slider section -->
+    <!-- empty section -->
+    <section class="w-full">
+        <div class="w-full h-[100px]"></div>
+    </section>
+    <!-- empty section -->
+    <!-- start blucolor section -->
+    <section class="w-full">
+        <div class="w-full 2xl:container mx-auto">
+            <div class="w-[85%] mx-auto flex ">
+                <article class="w-full lg:w-[60%] mx-auto">
+                    <h2 class="text-[35px] text-[#4b94ea] mt-10 text-right">بلو، فقط آبی نیست</h2>
+                    <ul class="my-10 *:py-4 w-full lg:w-[70%] mx-auto lg:mx-0">
+                        <li class="text-[#737789] pr-[35px] relative text-justify">
+                            <span
+                                class="material-symbols-outlined text-[#4b94ea] !text-[25px] font-bold absolute right-0 ">
+                                remove
+                            </span>
+                            عضو سامانه شتاب بانک مرکزی
+                        </li>
+                        <li class="text-[#737789] pr-[35px] relative text-justify">
+                            <span
+                                class="material-symbols-outlined text-[#4b94ea] !text-[25px] font-bold absolute right-0 ">
+                                remove
+                            </span>
+                            ارسال رایگان کارت بانکی به آدرس دلخواه شما در کمتر از ۵ روز کاری در تهران و ۱۰ روز کاری در
+                            سایر
+                            نقاط کشور
+                        </li>
+                        <li class="text-[#737789] pr-[35px] relative text-justify">
+                            <span
+                                class="material-symbols-outlined text-[#4b94ea] !text-[25px] font-bold absolute right-0 ">
+                                remove
+                            </span>
+                            دریافت و فعال‌سازی آنلاین رمزهای کارت از طریق اپلیکیشن بلو
+                        </li>
+                        <li class="text-[#737789] pr-[35px] relative text-justify">
+                            <span
+                                class="material-symbols-outlined text-[#4b94ea] !text-[25px] font-bold absolute right-0 ">
+                                remove
+                            </span>
+                            امکان مسدودکردن کارت از طریق اپلیکیشن بلو
+                        </li>
+                    </ul>
+                </article>
+                <figure class="hidden lg:w-[40%] mx-auto p-5 lg:flex flex-wrap justify-center items-center">
+                    <img id="cardColor" src="img/bluecard.png" alt="">
+                    <figcaption class="w-full flex justify-center items-center *:m-2">
+                        <span id="blueBtn" class="w-[15px] h-[15px] rounded-[50%] bg-[#105cff] cursor-pointer"></span>
+                        <span id="redBtn" class="w-[15px] h-[15px] rounded-[50%] bg-[#ff0808] cursor-pointer"></span>
+                        <span id="greenBtn" class="w-[15px] h-[15px] rounded-[50%] bg-[#0f880a] cursor-pointer"></span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!-- end blucolor section -->
+    <!-- empty section -->
+    <section class="w-full">
+        <div class="w-full h-[100px]"></div>
+    </section>
+    <!-- empty section -->
+    <!-- start bluline section -->
+    <section class="w-full bg-[#4b94ea]">
+        <div class="w-full 2xl:container mx-auto">
+            <div class="w-full h-[100px]"></div>
+            <div class="w-[85%] mx-auto flex-wrap lg:flex-nowrap flex justify-center items-center">
+                <figure
+                    class="w-full order-1 lg:order-1 lg:w-[40%] mx-auto p-5 lg:flex flex-wrap justify-center items-center">
+                    <img src="img/bluline.png" alt="">
+                </figure>
+                <article class="w-full lg:w-[60%] mr-10 text-white order-2">
+                    <h2 class="text-[35px] text-white mt-10 text-right">بلولاین؛ همیشه به وقت همه‌جا</h2>
+                    <p class="my-10 *:py-4 w-full lg:w-[70%] mx-auto lg:mx-0">اگر سوالی دارید، در چت اپلیکیشن بلو پیام
+                        صوتی و یا متنی بگذارید، یا با شماره ۹۱۰۳۶۰۶۰-۰۲۱ تماس بگیرید.
+                    </p>
+                    <p class="text-white">کارشناسان بلولاین همیشه آماده‌ی پاسخ‌گویی و حل مشکلات احتمالی شما هستند.</p>
+                </article>
+            </div>
+            <div class="w-full h-[100px]"></div>
+        </div>
+    </section>
+    <!-- end bluline section -->
+    <!-- empty section -->
+    <section class="w-full bg-[#fbfafb]">
+        <div class="w-full h-[100px]"></div>
+    </section>
+    <!-- empty section -->
+    <!-- start identity section -->
+    <section class="w-full bg-[#fbfafb]">
+        <div class="w-full 2xl:container mx-auto">
+            <div class="w-full xl:w-[85%] mx-auto p-5 flex-wrap lg:-flex-nowrap flex justify-center items-center">
+                <article class="w-full lg:w-[50%] mx-auto">
+                    <h2 class="text-[40px] text-[#4b94ea] text-right">شناسایی هویت</h2>
+                    <p class="my-5 *:py-4 w-full text-[#7c7d8a] leading-10 lg:w-[70%] mx-auto lg:mx-0">“اینجانب مهرداد
+                        اندامی با کد ملی
+                        ۱۲۳۴۵۶۷۸۹۰ درخواست بازکردن حساب در بلو را دارم.” یک ویدیو ۴۵ ثانیه‌ای با عبارت خواسته مشابه
+                        نمونه بالا ضبط و ارسال کنید.
+                    </p>
+                </article>
+                <div class="w-full mt-16 lg:flex lg:w-[50%]">
+                    <video src="vid/vid2.mp4" loop autoplay></video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end identity section -->
+    <!-- empty section -->
+    <section class="w-full">
+        <div class="w-full h-[100px]"></div>
+    </section>
+    <!-- empty section -->
+    <!-- start Money transfer section -->
+    <section class="w-full">
+        <div class="w-full 2xl:container mx-auto">
+            <div class="w-full xl:w-[85%] mx-auto p-5 flex-wrap lg:-flex-nowrap flex justify-center items-center">
+                <div class="w-full lg:flex lg:w-[35%]">
+                    <video src="vid/vid3.mp4" loop autoplay></video>
+                </div>
+                <article class="w-full lg:w-[65%] flex flex-wrap justify-center">
+                    <h2 class="text-[40px] text-[#4b94ea]">انتقال هوشمند پول</h2>
+                    <p class="my-5 py-4 w-full text-[#7c7d8a] leading-10 lg:w-[70%] mx-auto lg:mx-0">«انتقال هوشمند
+                        پول» یعنی راحت و بدون دردسر پولی را که می‌خواهید، جابه جا کنید. در بلو، لازم نیست شما بدانید
+                        پایا، ساتنا یا شبا چیست و برای انتقال چه میزان پول از کدامیک از آنها باید استفاده کرد. ما این
+                        کار را برای شما انجام می‌دهیم.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- end Money transfer section -->
+    <!-- empty section -->
+    <section class="w-full">
+        <div class="w-full h-[100px]"></div>
+    </section>
+    <!-- empty section -->
+    <!-- start FAQ section -->
+    <section id="FAQ" class="w-full">
+        <div class="w-full 2xl:container mx-auto">
+            <div
+                class="w-full xl:w-[85%] mx-auto p-5 flex-wrap lg:-flex-nowrap flex justify-center items-center *:mb-1">
+                <h2 class="text-[40px] !mb-7 text-[#4b94ea]">سوالات متداول</h2>
+                <div class="w-full flex flex-wrap justify-center items-center">
+                    <button
+                        class="accardion rounded-lg w-[85%] mx-auto bg-[#f2f2f2] text-[18px] lg:text-[22px] text-[#6c6c6c] cursor-pointer p-[18px] border-none text-right outline-none transition border-b-2">چگونه
+                        می‌توانم حساب بازکنم؟
+                    </button>
+                    <div class="panel px-[18px] w-[85%] hidden bg-white overflow-hidden text-right p-4">
+                        <p class="text-[16px] text-[#6c6c6c] leading-10 border-b-2">مراحل بازکردن حساب : ١.دانلود و نصب
+                            اپلیکیشن بلو ٢.داشتن یک خط تلفن همراه فعال که به نام
+                            خودتان
+                            است ٣.همراه داشتن اصل کارت ملی (برای کارت ملی‌های قدیمی، کد رهگیری درخواست صدور کارت هوشمند)
+                            برای ارسال تصاویر مربوطه
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full flex flex-wrap justify-center items-center">
+                    <button
+                        class="accardion rounded-lg w-[85%] mx-auto bg-[#f2f2f2] text-[18px] lg:text-[22px] text-[#6c6c6c] cursor-pointer p-[18px] border-none text-right outline-none transition border-b-2">
+                        برای بازکردن حساب چه مدارکی لازم است؟
+                    </button>
+                    <div class="panel px-[18px] w-[85%] hidden bg-white overflow-hidden text-right p-4">
+                        <p class="text-[16px] text-[#6c6c6c] leading-10 border-b-2">
+                            اصل کارت ملی (برای کارت ملی‌های قدیمی، کد رهگیری درخواست صدور کارت هوشمند) برای ارسال تصاویر
+                            مربوطه و داشتن یک خط تلفن همراه فعال که به نام خودتان است.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full flex flex-wrap justify-center items-center">
+                    <button
+                        class="accardion rounded-lg w-[85%] mx-auto bg-[#f2f2f2] text-[18px] lg:text-[22px] text-[#6c6c6c] cursor-pointer p-[18px] border-none text-right outline-none transition border-b-2">
+                        من کارت ملی هوشمند دریافت نکرده‌ام، آیا می‌توانم حساب بازکنم؟
+                    </button>
+                    <div class="panel px-[18px] w-[85%] hidden bg-white overflow-hidden text-right p-4">
+                        <p class="text-[16px] text-[#6c6c6c] leading-10 border-b-2">
+                            بله، اگر درخواست کارت ملی هوشمند را ثبت کردید، از راه ثبت کد رهگیری نوشته شده روی رسید
+                            ثبت‌نام کارت ملی هوشمند، امکان بازکردن حساب را دارید.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full flex flex-wrap justify-center items-center">
+                    <button
+                        class="accardion rounded-lg w-[85%] mx-auto bg-[#f2f2f2] text-[18px] lg:text-[22px] text-[#6c6c6c] cursor-pointer p-[18px] border-none text-right outline-none transition border-b-2">
+                        من کارت ملی هوشمند ندارم و برگه رسید کارت ملی هوشمند را گم کرده‌ام، چطور می‌توانم حساب بازکنم؟
+                    </button>
+                    <div class="panel px-[18px] w-[85%] hidden bg-white overflow-hidden text-right p-4">
+                        <p class="text-[16px] text-[#6c6c6c] leading-10 border-b-2">
+                            در وب‌سایت سازمان ثبت و احوال کد رهگیری کارت ملی خود را پیداکنید و فرآیند بازکردن حساب را
+                            انجام دهید.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full flex flex-wrap justify-center items-center">
+                    <button
+                        class="accardion rounded-lg w-[85%] mx-auto bg-[#f2f2f2] text-[18px] lg:text-[22px] text-[#6c6c6c] cursor-pointer p-[18px] border-none text-right outline-none transition border-b-2">
+                        مراحل بازکردن حساب چقدر زمان می‌برد؟
+                    </button>
+                    <div class="panel px-[18px] w-[85%] hidden bg-white overflow-hidden text-right p-4">
+                        <p class="text-[16px] text-[#6c6c6c] leading-10 border-b-2">
+                            باز کردن حساب در کمتر از ۷ دقیقه، بررسی مدارک، شناسایی هویت و فعال شدن حساب(در صورت تایید
+                            استعلام بانک مرکزی) حداکثر تا ۳ روز انجام می‌شود.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-[85%] text-left mt-4 font-bold">
+                    <a href="" class="text-[#4b94ea]">سوالات بیشتر...</a>
+                </div>
+                <div class="w-full text-center my-10 *:my-7">
+                    <h2 class="text-[#6c6c6c] text-[30px]">خط ارتباطی برای پاسخ به سوالات شما</h2>
+                    <a href=""
+                        class="bg-[#4b94ea] font-bold text-[18px] text-white py-3 px-7 rounded-xl hover:bg-[#3870b0]">بلولاین</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end FAQ section -->
+    <!-- empty section -->
+    <section class="w-full">
+        <div class="w-full h-[100px]"></div>
+    </section>
+    <!-- empty section -->
+    <!-- start footer section -->
+    <footer class="w-full bg-[#4b94ea]">
+        <section class="w-full">
+            <div class="w-full h-[100px]"></div>
+        </section>
+        <div class="w-full 2xl:container mx-auto">
+            <div class="w-full xl:w-[85%] mx-auto p-5 flex flex-wrap justify-center items-center *:mb-1">
+                <h2 class="text-white text-[24px] w-full text-center">نوشته شده توسط <strong>امید فیروزی</strong></h2>
+                <section class="w-full">
+                    <div class="w-full h-[50px]"></div>
+                </section>
+                <div class="flex justify-center items-center">
+                    <div class="w-[70%] text-white *:m-4">
+                        <a href="https://github.com/Omid-frz" target="_blank">
+                            <i class="bi bi-github text-[35px]"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/omid-firouzi-9793a62a9/" target="_blank">
+                            <i class="bi bi-linkedin text-[35px]"></i>
+                        </a>
+                    </div>
+                    <figure class="w-[20%] flex justify-center items-center rounded-[50%]">
+                        <img id="image" class="rounded-[50%]" noCopy
+                            src="https://private-user-images.githubusercontent.com/155738053/366826572-17cf5845-40dd-4872-bc4f-66a9c3360adf.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjYxMzYzNjAsIm5iZiI6MTcyNjEzNjA2MCwicGF0aCI6Ii8xNTU3MzgwNTMvMzY2ODI2NTcyLTE3Y2Y1ODQ1LTQwZGQtNDg3Mi1iYzRmLTY2YTljMzM2MGFkZi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwOTEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDkxMlQxMDE0MjBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zMGVlNzU1YmQyZDVmMGM2ZjQyMWYwYTgzM2FiMzllNzgwZWE4MGMzYjYwZDRlOTBjYWIyYTllMjYyNjYyY2Q1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.vBG2ERgMrJXg7g-01oQajWBviwkWeLTAXwIf1Y1c11Y"
+                            alt="">
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <section class="w-full">
+            <div class="w-full h-[100px]"></div>
+        </section>
+    </footer>
+    <!-- end footer section -->
+</body>
+<script src="../node_modules/swiper/swiper-bundle.min.js"></script>
+<script>
+    // slider script
+    let swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+    // slider script
+    //\/\/\/\/\/\/\/\/\/\/\/\/
+    // FAQ script
+    document.querySelectorAll('.accardion').forEach(accardion => {
+        accardion.addEventListener('click', () => {
+            accardion.classList.toggle('active')
+            const panel = accardion.nextElementSibling
+            panel.classList.toggle('hidden')
+        })
+    })
+    // FAQ script
+    //\/\/\/\/\/\/\/\/\/\/\/\/
+    // acardion-menu script
+    function openMenu() {
+        document.getElementById('menu_acc').classList.add('w-[90%]');
+    }
+    function closeMenu() {
+        document.getElementById('menu_acc').classList.remove('w-[90%]');
+    }
+    // acardion-menu script
+    //\/\/\/\/\/\/\/\/\/\/\/\/
+    //bluColor script
+    const imgColor = document.getElementById('cardColor')
+    document.getElementById('blueBtn').addEventListener('click', () => {
+        imgColor.setAttribute('src', 'img/bluecard.png')
+    })
+    document.getElementById('redBtn').addEventListener('click', () => {
+        imgColor.setAttribute('src', 'img/redcard.png')
+    })
+    document.getElementById('greenBtn').addEventListener('click', () => {
+        imgColor.setAttribute('src', 'img/greencard.png')
+    })
+    //bluColor script
+    let image = document.querySelector('#image')
+    image.addEventListener('contextmenu', event => event.preventDefault());
+    image.addEventListener('dragstart', event => event.preventDefault());
+</script>
+
+</html>
